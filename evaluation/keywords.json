@@ -1,0 +1,70 @@
+{
+  "forbidden_groups": {
+    "sugar": [
+      "sugar",
+      "white sugar",
+      "granulated sugar",
+      "table sugar",
+      "caster sugar",
+      "brown sugar",
+      "powdered sugar",
+      "confectioners sugar"
+    ],
+    "syrups": [
+      "corn syrup",
+      "high fructose corn syrup",
+      "hfcs",
+      "maple syrup",
+      "agave syrup",
+      "honey",
+      "molasses",
+      "rice syrup"
+    ],
+    "refined_flours": [
+      "all-purpose flour",
+      "ap flour",
+      "white flour",
+      "cake flour",
+      "bread flour",
+      "self-rising flour"
+    ],
+    "sweetened_dairy": [
+      "sweetened condensed milk",
+      "sweetened evaporated milk"
+    ],
+    "sweet_drinks": [
+      "soda",
+      "soft drink",
+      "cola"
+    ]
+  },
+  "required_groups": {
+    "non_nutritive_sweeteners": [
+      "stevia",
+      "stevia powder",
+      "erythritol",
+      "monk fruit",
+      "xylitol",
+      "sucralose"
+    ],
+    "low_carb_flours": [
+      "almond flour",
+      "coconut flour",
+      "flaxseed meal",
+      "ground flaxseed"
+    ],
+    "healthy_oils": [
+      "olive oil",
+      "extra-virgin olive oil",
+      "avocado oil",
+      "canola oil"
+    ],
+    "high_fiber_additions": [
+      "chia seeds",
+      "psyllium husk",
+      "oat fiber",
+      "wheat bran"
+    ]
+  }
+}
+
