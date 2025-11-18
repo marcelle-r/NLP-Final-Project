@@ -205,3 +205,51 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# --- DATA FILES ---
+data/
+*.csv
+*.tsv
+*.json
+*.zip
+*.gz
+
+# --- MODEL FILES ---
+models/
+checkpoints/
+*.pt
+*.bin
+*.safetensors
+*.pth
+
+# Hugging Face cache
+huggingface/
+~/.cache/huggingface/
+
+# --- TRAINING RUNS & LOGS ---
+runs/
+logs/
+wandb/
+tensorboard/
+tb_logs/
+events.out.tfevents*
+*.log
+
+# --- GENERATED OUTPUTS ---
+outputs/
+generated/
+results/
+
+# --- LATEX FILES ---
+*.aux
+*.bbl
+*.blg
+*.toc
+*.out
+*.lof
+*.lot
+*.fdb_latexmk
+*.fls
+*.nav
+*.snm
+*.synctex.gz
