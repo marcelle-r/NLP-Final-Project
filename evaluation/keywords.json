@@ -36,6 +36,52 @@
       "soda",
       "soft drink",
       "cola"
+    ],
+    "refined_carbs": [
+      "white rice",
+      "white bread",
+      "baguette",
+      "pasta",
+      "spaghetti",
+      "fettuccine",
+      "macaroni",
+      "ramen",
+      "tortilla",
+      "naan"
+    ], 
+    "high_gi_starches": [
+      "potatoes",
+      "mashed potatoes",
+      "fries",
+      "hash browns",
+      "corn"
+    ],
+    "processed_desserts": [
+      "cake",
+      "cupcakes",
+      "donuts",
+      "cookies",
+      "brownies",
+      "muffins",
+      "pastries"
+    ],
+    "fried_foods": [
+      "fried chicken",
+      "tempura",
+      "deep fried",
+      "breaded"
+    ],
+    "cream_based_sauces": [
+      "alfredo sauce",
+      "heavy cream",
+      "bechamel",
+      "cream sauce"
+    ],
+    "processed_meats": [
+      "sausage",
+      "pepperoni",
+      "hot dog",
+      "salami"
     ]
   },
   "required_groups": {
@@ -64,6 +110,29 @@
       "psyllium husk",
       "oat fiber",
       "wheat bran"
+    ],
+    "whole_grains": [
+      "quinoa",
+      "brown rice",
+      "barley",
+      "buckwheat",
+      "oats",
+      "steel-cut oats"
+    ],
+    "fiber_rich_veggies": [
+      "broccoli",
+      "spinach",
+      "kale",
+      "zucchini",
+      "cauliflower"
+    ], 
+    "lean_proteins": [
+      "salmon",
+      "tuna",
+      "turkey",
+      "skinless chicken breast",
+      "tofu",
+      "tempeh"
     ]
   }
 }
