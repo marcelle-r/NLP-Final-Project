@@ -74,18 +74,15 @@ def main():
     # === WRITE SUMMARY OUTPUT ===
     total = len(df_scored)
     summary = {
-        "total": total,
-        "no_forbidden": sum(1 - f for f in has_forbidden),
-        "has_required": sum(has_required),
-        "compliant": sum(compliant),
-    }
+    "total": total,
+    "no_forbidden": sum(1 - f for f in has_forbidden),
+    "has_required": sum(has_required),
+    "compliant": sum(compliant),
+}
 
     df_summary = pd.DataFrame([summary])
     df_summary.to_csv(SUMMARY_OUT_PATH, index=False)
     print(f"✔ Summary saved to: {SUMMARY_OUT_PATH}")
-
-    print("\n=== Summary ===")
-    print(summary)
 
 
 if __name__ == "__main__":
