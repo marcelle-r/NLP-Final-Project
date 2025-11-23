@@ -1,0 +1,3 @@
+Test Set,Total,No Forbidden,Has Required,Compliant,Compliance %
+Adversarial (prompts_dev),59,29,16,12,20.3
+Realistic (prompts_from_safe),100,86,41,37,37.0
