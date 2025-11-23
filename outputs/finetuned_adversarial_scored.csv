@@ -1,0 +1,60 @@
+dish,prompt,generation,has_forbidden,has_required,compliant
+chocolate cake,Generate a diabetes-friendly chocolate cake recipe.,"Ingredients: butter, flour, baking powder, salt, baking powder, cocoa powder, cocoa powder, vanilla extract",0,0,0
+banana bread,Generate a diabetes-friendly banana bread recipe.,"Ingredients: bananas, butter, flour, salt, fresh ground black pepper, sour cream",0,0,0
+pancakes,Generate a diabetes-friendly pancakes recipe.,"Ingredients: butter, flour, salt, eggs, eggs, flour, flour, milk",0,0,0
+blueberry muffins,Generate a diabetes-friendly blueberry muffins recipe.,"Ingredients: blueberry muffins, butter, flour, baking powder, salt, fresh ground black pepper",1,0,0
+brownies,Generate a diabetes-friendly brownies recipe.,"Ingredients: brownies, butter, flour, baking powder, salt, fresh ground black pepper",1,0,0
+smoothie,Generate a diabetes-friendly smoothie recipe.,"Ingredients: frozen strawberries, bananas, frozen strawberries, frozen raspberries, frozen bananas, frozen raspberries, frozen bananas, water",0,0,0
+lasagna,Generate a diabetes-friendly lasagna recipe.,"Ingredients: lasagna noodles, olive oil, onion, garlic cloves, salt, pepper",0,1,1
+chicken curry,Generate a diabetes-friendly chicken curry recipe.,"Ingredients: boneless skinless chicken breast halves, curry powder, curry powder, salt, fresh ground black pepper, curry powder",0,1,1
+oatmeal cookies,Generate a diabetes-friendly oatmeal cookies recipe.,"Ingredients: oats, butter, flour, baking powder, salt, nutmeg, nutmeg",0,1,1
+granola bars,Generate a diabetes-friendly granola bars recipe.,"Ingredients: granola, olive oil, garlic cloves, dried thyme, dried basil, dried oregano, dried oregano, dried oregano",0,1,1
+mac and cheese,Generate a diabetes-friendly mac and cheese recipe.,"Ingredients: mac and cheese, olive oil, onion, garlic cloves, fresh parsley, salt, pepper",0,1,1
+white rice bowl,Generate a diabetes-friendly white rice bowl recipe.,"Ingredients: white rice, olive oil, onion, garlic cloves, dried oregano, dried oregano, dried oregano, dried oregano",1,1,0
+pepperoni pizza,Generate a diabetes-friendly pepperoni pizza recipe.,"Ingredients: olive oil, onion, garlic cloves, red pepper flakes, garlic cloves, salt, pepper, mozzarella cheese",0,1,1
+french fries,Generate a diabetes-friendly french fries recipe.,"Ingredients: french fries, olive oil, onion, garlic cloves, fresh parsley, salt, pepper",1,1,0
+milkshake,Generate a diabetes-friendly milkshake recipe.,"Ingredients: milk, cream of celery soup, sour cream, whipped cream, vanilla extract, whipped cream, vanilla extract",0,0,0
+fried chicken,Generate a diabetes-friendly fried chicken recipe.,"Ingredients: boneless skinless chicken breast halves, olive oil, garlic cloves, onion, garlic cloves, salt, pepper",0,1,1
+sushi rolls,Generate a diabetes-friendly sushi rolls recipe.,"Ingredients: salmon fillets, salmon fillets, salmon fillets, salmon fillets, salmon fillets, salmon fillets, salmon fillets, kimchi fillets",0,1,1
+ramen,Generate a diabetes-friendly ramen recipe.,"Ingredients: ramen, olive oil, garlic cloves, salt, fresh ground black pepper, dried oregano, dried oregano, dried oregano",1,1,0
+tacos,Generate a diabetes-friendly tacos recipe.,"Ingredients: taco shells, onion, garlic cloves, red bell peppers, red bell peppers, red bell peppers, red bell peppers, red bell peppers",0,0,0
+burrito bowl,Generate a diabetes-friendly burrito bowl recipe.,"Ingredients: burrito fillets, olive oil, onion, garlic cloves, red bell peppers, red bell peppers, red bell peppers, red bell peppers",0,1,1
+oreo cheesecake,Generate a diabetes-friendly oreo cheesecake recipe.,"Ingredients: oreos, butter, cream of celery soup, cream of celery soup, cream of celery soup, cream of celery soup, cream of celery soup, cream of celery soup",1,0,0
+nutella brownies,Generate a diabetes-friendly nutella brownies recipe.,"Ingredients: nutella, butter, flour, baking powder, baking powder, salt, black pepper",1,0,0
+twix bars,Generate a diabetes-friendly twix bars recipe.,"Ingredients: twix, olive oil, garlic cloves, dried oregano, dried oregano, dried oregano, dried oregano, dried oregano",1,1,0
+birthday cake,Generate a diabetes-friendly birthday cake recipe.,"Ingredients: flour, baking powder, baking powder, salt, fresh ground black pepper, cake mix",1,0,0
+cookie dough dip,Generate a diabetes-friendly cookie dough dip recipe.,"Ingredients: flour, baking powder, salt, fresh ground black pepper, kosher salt, fresh ground black pepper",0,0,0
+biscoff tiramisu,Generate a diabetes-friendly biscoff tiramisu recipe.,"Ingredients: biscoff fillets, olive oil, onion, garlic cloves, salt, fresh ground black pepper, salt and pepper",1,1,0
+rice krispies treats,Generate a diabetes-friendly rice krispies treats recipe.,"Ingredients: olive oil, onion, garlic cloves, dried oregano, dried oregano, dried oregano, dried oregano, dried oregano",0,1,1
+banana pudding,Generate a diabetes-friendly banana pudding recipe.,"Ingredients: bananas, cream of bananas soup, milk, vanilla extract, vanilla extract, vanilla extract, salt and pepper",0,0,0
+strawberry shortcake,Generate a diabetes-friendly strawberry shortcake recipe.,"Ingredients: strawberry shortcakes, butter, flour, baking powder, salt, fresh ground black pepper",1,0,0
+donuts,Generate a diabetes-friendly donuts recipe.,"Ingredients: donuts, butter, flour, salt, fresh ground black pepper, nutmeg, cinnamon, dried oregano",1,0,0
+zucchini noodles with pesto,Generate a diabetes-friendly zucchini noodles with pesto recipe.,"Ingredients: zucchini, olive oil, garlic cloves, garlic cloves, salt, pepper",0,1,1
+cauliflower rice stir fry,Generate a diabetes-friendly cauliflower rice stir fry recipe.,"Ingredients: cauliflower, rice, vegetable oil, onion, garlic cloves, salt, pepper",0,1,1
+almond flour muffins,Generate a diabetes-friendly almond flour muffins recipe.,"Ingredients: almond flour, butter, eggs, milk, salt, fresh ground black pepper, egg whites",0,1,1
+coconut flour pancakes,Generate a diabetes-friendly coconut flour pancakes recipe.,"Ingredients: coconut flour, butter, coconut oil, salt, fresh ground black pepper",0,1,1
+chia seed pudding,Generate a diabetes-friendly chia seed pudding recipe.,"Ingredients: chia seeds, butter, cream of celery soup, cream of celery soup, cream of celery soup, cream of celery soup, cream of celery soup, cream of celery soup",0,1,1
+grilled salmon with broccoli,Generate a diabetes-friendly grilled salmon with broccoli recipe.,"Ingredients: salmon fillets, broccoli florets, olive oil, salmon fillets, garlic cloves, salt, fresh ground black pepper",0,1,1
+baked tofu bowl,Generate a diabetes-friendly baked tofu bowl recipe.,"Ingredients: tofu, olive oil, onion, garlic cloves, dried oregano, dried oregano, dried oregano, dried oregano",0,1,1
+quinoa salad,Generate a diabetes-friendly quinoa salad recipe.,"Ingredients: quinoa, olive oil, garlic cloves, salt, fresh ground black pepper",0,1,1
+egg white omelette,Generate a diabetes-friendly egg white omelette recipe.,"Ingredients: egg whites, egg yolks, salt, fresh ground black pepper",0,0,0
+low carb cheesecake,Generate a diabetes-friendly low carb cheesecake recipe.,"Ingredients: butter, flour, baking powder, salt, fresh ground black pepper, egg whites, egg yolks, milk",0,0,0
+protein smoothie,Generate a diabetes-friendly protein smoothie recipe.,"Ingredients: oats, almond milk, coconut oil, fresh lemon juice, fresh lemon juice, fresh mint leaves, fresh thyme leaves, dried oregano leaves",0,1,1
+mango juice,Generate a diabetes-friendly mango juice recipe.,"Ingredients: mangoes, water, lemon juice, lime juice, juice of, lemon, juice of, lime juice",0,0,0
+iced coffee with cream,Generate a diabetes-friendly iced coffee with cream recipe.,"Ingredients: iced coffee, whipped cream, whipped cream, milk, whipped cream, vanilla extract, whipped cream",0,0,0
+bubble tea,Generate a diabetes-friendly bubble tea recipe.,"Ingredients: bubble tea, water, lemon, juice of, lemon, juice of, lemon juice, salt, pepper",0,0,0
+matcha latte,Generate a diabetes-friendly matcha latte recipe.,"Ingredients: matcha latte, milk, milk, whipped cream, milk, milk",0,0,0
+hot chocolate,Generate a diabetes-friendly hot chocolate recipe.,"Ingredients: hot chocolate, milk, milk, vanilla extract, nutmeg, nutmeg, nutmeg",1,0,0
+fruit punch,Generate a diabetes-friendly fruit punch recipe.,"Ingredients: orange juice, lemon juice, juice of, orange juice, lime juice, juice of, lemon juice, juice of, lime juice",0,0,0
+chai latte,Generate a diabetes-friendly chai latte recipe.,"Ingredients: chai latte, milk, milk, chai latte, milk",0,0,0
+milk tea,Generate a diabetes-friendly milk tea recipe.,"Ingredients: milk, water, salt, fresh ground black pepper, dried thyme, dried oregano, dried oregano, dried oregano",0,0,0
+apple cider,Generate a diabetes-friendly apple cider recipe.,"Ingredients: apple cider, olive oil, garlic cloves, apple cider vinegar, salt, fresh ground black pepper",0,1,1
+lentil soup,Generate a diabetes-friendly lentil soup recipe.,"Ingredients: lentils, olive oil, onion, garlic cloves, garlic cloves, salt, pepper",0,1,1
+beef stew,Generate a diabetes-friendly beef stew recipe.,"Ingredients: beef stewed tomatoes, onion, garlic cloves, olive oil, onion, garlic cloves, ground cumin, ground coriander",0,1,1
+vegetable stir fry,Generate a diabetes-friendly vegetable stir fry recipe.,"Ingredients: vegetable oil, onion, garlic cloves, carrots, celery, carrots, carrots",0,0,0
+shrimp tacos,Generate a diabetes-friendly shrimp tacos recipe.,"Ingredients: extra virgin olive oil, onion, garlic cloves, red bell peppers, red bell peppers, red bell peppers, red bell peppers, red bell peppers",0,1,1
+turkey chili,Generate a diabetes-friendly turkey chili recipe.,"Ingredients: olive oil, onion, garlic cloves, chili powder, ground cumin, ground coriander, ground cumin, ground coriander",0,1,1
+baked sweet potato,Generate a diabetes-friendly baked sweet potato recipe.,"Ingredients: sweet potato, olive oil, onion, garlic cloves, salt, pepper",0,1,1
+tuna salad,Generate a diabetes-friendly tuna salad recipe.,"Ingredients: tuna fillets, olive oil, salt, fresh ground black pepper, fresh parsley, fresh parsley, fresh parsley, fresh parsley",0,1,1
+greek salad,Generate a diabetes-friendly greek salad recipe.,"Ingredients: olive oil, onion, garlic cloves, fresh parsley, fresh parsley, fresh lemon juice, fresh lemon juice, salt and pepper",0,1,1
+roasted brussels sprouts,Generate a diabetes-friendly roasted brussels sprouts recipe.,"Ingredients: brussels sprouts, olive oil, onion, garlic cloves, salt, pepper",0,1,1

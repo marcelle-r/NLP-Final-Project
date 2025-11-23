@@ -1,0 +1,5 @@
+Model,Test Set,Total,Compliant,Compliance %,Improvement
+T5-Base Baseline,Adversarial,59,7,11.9,-
+T5-Base Baseline,Realistic,100,27,27.0,-
+"T5-Base Fine-tuned (LoRA, 5K recipes)",Adversarial,59,28,47.5,+35.6%
+"T5-Base Fine-tuned (LoRA, 5K recipes)",Realistic,100,98,98.0,+71.0%
