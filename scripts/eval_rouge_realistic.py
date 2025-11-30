@@ -8,8 +8,6 @@ Assumptions:
   - Reference recipes live in data/processed/foodcom_safe_recipes.csv
   - Generation CSVs have columns: dish, generation
   - Safe recipes CSV has at least: name, ingredients, steps
-
-If your column names differ a bit, tweak the constants near the top.
 """
 
 from pathlib import Path
@@ -18,7 +16,7 @@ import pandas as pd
 from rouge_score import rouge_scorer
 
 
-# ---- configuration (tweak here if your columns/paths are slightly different) ----
+# ---- configuration ----
 
 SAFE_RECIPES_REL = "data/processed/foodcom_safe_recipes.csv"
 
@@ -89,6 +87,7 @@ def load_pairs(
     if MAX_PAIRS is not None:
         merged = merged.head(MAX_PAIRS)
 
+    # refs = gold recipes, gens = generated recipes
     refs = merged["ref_text"].astype(str).tolist()
     gens = merged[GEN_TEXT_COL].astype(str).tolist()
 
@@ -109,6 +108,8 @@ def evaluate_rouge(name: str, refs: List[str], gens: List[str]) -> pd.DataFrame:
         rows.append(
             {
                 "idx": i,
+                "gold": r,
+                "generation": g,
                 "rouge1_recall": scores["rouge1"].recall,
                 "rouge2_recall": scores["rouge2"].recall,
                 "rougeL_recall": scores["rougeL"].recall,
@@ -119,7 +120,10 @@ def evaluate_rouge(name: str, refs: List[str], gens: List[str]) -> pd.DataFrame:
     for col in ["rouge1_recall", "rouge2_recall", "rougeL_recall"]:
         print(f"{col.replace('_recall', '')}: {df[col].mean():.4f}")
 
-    print(f"rougeSum (mean of 1/2/L recall): {df[['rouge1_recall','rouge2_recall','rougeL_recall']].mean(axis=1).mean():.4f}")
+    print(
+        "rougeSum (mean of 1/2/L recall): "
+        f"{df[['rouge1_recall','rouge2_recall','rougeL_recall']].mean(axis=1).mean():.4f}"
+    )
     return df
 
 
