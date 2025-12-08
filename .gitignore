@@ -1,11 +1,11 @@
 
-# Data files (too large for GitHub)
+# Large data files (regenerate with scripts)
 *.csv
 *.zip
 *.pkl
-data/raw/
-data/filtered*.csv
-final_training_data/*.txt
+data/
+final_training_data/
 
-# Keep only tracking scripts
-!keywords_final.json
+# Keep only code and configs
+!final_evaluation/keywords_final.json
+!.gitignore
