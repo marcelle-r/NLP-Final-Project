@@ -1,0 +1,6 @@
+model,lcr_overall,rouge1,rouge2,rougeL,bertscore_f1
+baseline,8.63,0.143,0.025,0.099,0.792
+baseline_keywords,5.815,0.109,0.018,0.079,0.785
+rl_lora,23.852,0.07,0.013,0.054,0.801
+safe_lora,95.444,0.089,0.02,0.065,0.781
+unfiltered_lora,24.519,0.07,0.013,0.054,0.801

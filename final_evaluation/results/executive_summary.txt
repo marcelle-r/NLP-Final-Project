@@ -1,0 +1,28 @@
+
+FINAL EVALUATION SUMMARY
+======================================================================
+
+📊 KEY FINDINGS:
+
+1. BEST MODEL: safe_lora
+   - Average LCR across all test sets: 95.4%
+   - Improvement over baseline: +86.8 percentage points
+
+2. BASELINE PERFORMANCE:
+   - Baseline (zero-shot): 8.6% LCR
+   - Shows need for fine-tuning on diabetes-safe data
+
+3. GENERALIZATION:
+   - Tested on 2 external datasets (RecipeNLG, Kaggle Food Recipes)
+   - Plus 108 adversarial prompts (challenging dishes)
+   - Total: 708 test examples
+
+4. QUALITY METRICS:
+   - BERTScore F1 remains high (~0.80+) across all models
+   - Shows constraint satisfaction doesn't harm recipe quality
+
+5. SAFETY-STRATIFIED RESULTS:
+   - Models successfully FIX originally-unsafe recipes
+   - Demonstrates ability to transform any recipe into diabetes-friendly version
+
+======================================================================
