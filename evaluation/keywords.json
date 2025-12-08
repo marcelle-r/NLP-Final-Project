@@ -11,7 +11,9 @@
       "confectioners sugar",
       "icing sugar",
       "sugar syrup",
-      "simple syrup"
+      "simple syrup",
+      "raw sugar",
+      "turbinado sugar"
     ],
     "syrups": [
       "corn syrup",
@@ -22,7 +24,8 @@
       "honey",
       "molasses",
       "rice syrup",
-      "caramel syrup"
+      "caramel syrup",
+      "pancake syrup"
     ],
     "refined_flours": [
       "all-purpose flour",
@@ -31,7 +34,9 @@
       "cake flour",
       "bread flour",
       "self-rising flour",
-      "self rising flour"
+      "self rising flour",
+      "white wheat flour",
+      "plain flour"
     ],
     "sweetened_dairy": [
       "sweetened condensed milk",
@@ -43,7 +48,15 @@
       "cola",
       "sweet tea",
       "fruit punch",
-      "lemonade"
+      "lemonade",
+      "coke",
+      "pepsi",
+      "sprite",
+      "fanta",
+      "7up",
+      "mountain dew",
+      "energy drink",
+      "sports drink"
     ],
     "refined_carbs": [
       "white rice",
@@ -64,7 +77,14 @@
       "white roll",
       "white rolls",
       "pancake mix",
-      "waffle mix"
+      "waffle mix",
+      "noodles",
+      "white tortillas",
+      "flour tortilla",
+      "flour tortillas",
+      "white pasta",
+      "white baguette",
+      "white sandwich bread"
     ],
     "high_gi_starches": [
       "potatoes",
@@ -72,7 +92,12 @@
       "fries",
       "hash browns",
       "tater tots",
-      "corn"
+      "corn",
+      "baked potato",
+      "baked potatoes",
+      "french fries",
+      "potato wedges",
+      "potato chips"
     ],
     "processed_desserts": [
       "cake",
@@ -85,26 +110,51 @@
       "pancakes",
       "waffles",
       "crepes",
-      "funnel cake"
+      "funnel cake",
+      "cupcake",
+      "donut",
+      "cookie",
+      "brownie",
+      "muffin",
+      "pastry",
+      "pancake",
+      "waffle",
+      "crepe"
     ],
     "fried_foods": [
       "fried chicken",
       "tempura",
       "deep fried",
-      "breaded"
+      "breaded",
+      "fried fish",
+      "fried shrimp",
+      "fried pork",
+      "fried beef",
+      "fried vegetables",
+      "fried veggie",
+      "fried veggies"
     ],
     "cream_based_sauces": [
       "alfredo sauce",
       "heavy cream",
       "bechamel",
-      "cream sauce"
+      "cream sauce",
+      "cream-based sauce",
+      "creamy sauce",
+      "cream based sauce"
     ],
     "processed_meats": [
       "sausage",
       "pepperoni",
       "hot dog",
       "salami",
-      "bacon bits"
+      "bacon bits",
+      "bacon",
+      "breakfast sausage",
+      "italian sausage",
+      "chorizo",
+      "prosciutto",
+      "hot dogs"
     ],
     "branded_sweets": [
       "oreo",
@@ -129,7 +179,11 @@
       "pillsbury dough",
       "cake mix",
       "brownie mix",
-      "cookie mix"
+      "cookie mix",
+      "m and m",
+      "m and ms",
+      "reese cups",
+      "reese's cups"
     ],
     "ultraprocessed_ingredients": [
       "store-bought frosting",
@@ -146,7 +200,10 @@
       "velveeta",
       "cheese whiz",
       "spray cheese",
-      "canned cheese soup"
+      "canned cheese soup",
+      "canned cheese",
+      "processed cheese spread",
+      "cheese product"
     ],
     "dessert_spreads": [
       "nutella",
@@ -154,7 +211,9 @@
       "biscoff spread",
       "marshmallow fluff",
       "caramel sauce",
-      "chocolate syrup"
+      "chocolate syrup",
+      "chocolate hazelnut spread",
+      "caramel drizzle"
     ],
     "packaged_snacks": [
       "doritos",
@@ -169,7 +228,11 @@
       "rice krispies cereal",
       "marshmallows",
       "cheez it",
-      "cheez-its"
+      "cheez-its",
+      "potato chips",
+      "corn chips",
+      "tortilla chips",
+      "cheez itz"
     ],
     "prepackaged_desserts": [
       "store bought cookies",
@@ -177,7 +240,11 @@
       "frozen yogurt",
       "ice cream",
       "gelato",
-      "sorbet"
+      "sorbet",
+      "store-bought cake",
+      "store bought cake",
+      "store-bought dessert",
+      "store bought dessert"
     ]
   },
 
@@ -190,20 +257,26 @@
       "monkfruit",
       "xylitol",
       "sucralose",
-      "allulose"
+      "allulose",
+      "stevia extract",
+      "monk fruit sweetener"
     ],
     "low_carb_flours": [
       "almond flour",
       "coconut flour",
       "flaxseed meal",
       "ground flaxseed",
-      "chia flour"
+      "chia flour",
+      "almond meal",
+      "coconut meal",
+      "flax meal"
     ],
     "healthy_oils": [
       "olive oil",
       "extra-virgin olive oil",
       "avocado oil",
-      "canola oil"
+      "canola oil",
+      "extra virgin olive oil"
     ],
     "high_fiber_additions": [
       "chia seeds",
@@ -212,7 +285,11 @@
       "wheat bran",
       "hemp seeds",
       "sunflower seeds",
-      "pumpkin seeds"
+      "pumpkin seeds",
+      "chia seed",
+      "hemp seed",
+      "sunflower seed",
+      "pumpkin seed"
     ],
     "whole_grains": [
       "quinoa",
@@ -223,7 +300,10 @@
       "bulgur",
       "wild rice",
       "oats",
-      "steel-cut oats"
+      "steel-cut oats",
+      "rolled oats",
+      "old-fashioned oats",
+      "old fashioned oats"
     ],
     "fiber_rich_veggies": [
       "broccoli",
@@ -233,7 +313,12 @@
       "cauliflower",
       "brussels sprouts",
       "green beans",
-      "asparagus"
+      "asparagus",
+      "broccolini",
+      "baby spinach",
+      "baby kale",
+      "green bean",
+      "zucchinis"
     ],
     "lean_proteins": [
       "salmon",
@@ -250,7 +335,15 @@
       "tofu",
       "tempeh",
       "cod",
-      "tilapia"
+      "tilapia",
+      "skinless turkey breast",
+      "turkey breast",
+      "low fat greek yoghurt",
+      "low-fat greek yoghurt",
+      "nonfat greek yogurt",
+      "non-fat greek yogurt",
+      "nonfat yogurt",
+      "non-fat yogurt"
     ]
   }
 }
