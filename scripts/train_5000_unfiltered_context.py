@@ -47,7 +47,13 @@ FEWSHOT_EXAMPLE = (
 )
 
 # === UNFILTERED TRAINING: sample 5000 recipes from RAW_recipes ===
-df = pd.read_csv("data/external/foodcom/RAW_recipes.csv").sample(5000, random_state=42)
+df = pd.read_csv(
+    "data/external/foodcom/RAW_recipes.csv",
+    engine="python",
+    on_bad_lines="skip"
+).sample(5000, random_state=42)
+
+
 
 data = {"input_text": [], "target_text": []}
 
