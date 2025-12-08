@@ -19,7 +19,7 @@ except NameError:
 EVAL_DIR = BASE_DIR / "final_evaluation"
 RESULTS_DIR = EVAL_DIR / "results"
 ANALYSIS_DIR = RESULTS_DIR / "failure_analysis"
-KEYWORDS_PATH = BASE_DIR / "evaluation" / "keywords.json"
+KEYWORDS_PATH = BASE_DIR / "final_evaluation" / "keywords_final.json"
 
 ANALYSIS_DIR.mkdir(parents=True, exist_ok=True)
 
