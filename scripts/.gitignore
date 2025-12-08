@@ -1,1 +1,4 @@
 data/RAW_recipes.csv
+venv/
+.venv/
+venv/
