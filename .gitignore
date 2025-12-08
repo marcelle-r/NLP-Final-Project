@@ -2,3 +2,4 @@ data/RAW_recipes.csv
 data/RAW_interactions.csv
 data/*.pkl
 data/**/*
+venv/
