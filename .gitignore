@@ -1,5 +1,11 @@
-data/RAW_recipes.csv
-data/RAW_interactions.csv
-data/*.pkl
-data/**/*
-venv/
+
+# Data files (too large for GitHub)
+*.csv
+*.zip
+*.pkl
+data/raw/
+data/filtered*.csv
+final_training_data/*.txt
+
+# Keep only tracking scripts
+!keywords_final.json
