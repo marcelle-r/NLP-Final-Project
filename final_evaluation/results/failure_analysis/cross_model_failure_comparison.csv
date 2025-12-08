@@ -1,0 +1,6 @@
+model,total_failures,has_forbidden,missing_required,dessert_failures,carb_heavy_failures,very_short_recipes
+baseline,641,435,448,130,40,162
+baseline_keywords,661,469,439,129,42,208
+safe_lora,25,23,11,6,1,0
+unfiltered_lora,514,378,388,127,29,481
+rl_lora,520,380,390,127,30,486

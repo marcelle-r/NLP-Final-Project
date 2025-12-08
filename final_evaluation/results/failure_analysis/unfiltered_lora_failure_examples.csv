@@ -1,0 +1,13 @@
+model,category,dish,generation,dataset
+unfiltered_lora,unknown,French Chicken Stew,"Ingredients: boneless skinless chicken breasts, onion, garlic cloves, salt and pepper, fresh parsley, fresh parsley, fresh parsley",recipenlg
+unfiltered_lora,unknown,Barbecued Beef Brisket Recipe,"Ingredients: beef tenderloin, onion, garlic cloves, red pepper flakes, red pepper flakes, red wine vinegar, salt, pepper",recipenlg
+unfiltered_lora,unknown,Mustard Plus Glazed Pork Chops,"Ingredients: boneless pork chops, mayonnaise, mayonnaise, mayonnaise, mayonnaise, salt, pepper",recipenlg
+unfiltered_lora,both_violations,Moms Pie Dough ,"Ingredients: flour, baking powder, baking soda, salt, butter, eggs, milk, vanilla extract",recipenlg
+unfiltered_lora,both_violations,Citrus Syrup,"Ingredients: sugar, water, citrus liqueur",recipenlg
+unfiltered_lora,both_violations,Cranberry And Candied Orange Chutney ,"Ingredients: cranberries, candied orange juice, orange juice, orange juice, sugar",recipenlg
+unfiltered_lora,missing_required,Dill Dip,"Ingredients: dill, onion, garlic cloves, sour cream, sour cream, salt, pepper",recipenlg
+unfiltered_lora,missing_required,Caramel Snappers,"Ingredients: butter, sugar, salt, vanilla extract, granulated sugar, granulated sugar",recipenlg
+unfiltered_lora,missing_required,Extra Flaky Pie Crust,"Ingredients: flour, baking powder, salt, baking soda, baking powder, baking soda, salt, butter",recipenlg
+unfiltered_lora,has_forbidden,Portzelky (New Year'S Cookies),"Ingredients: flour, baking powder, salt, baking soda, baking powder, baking soda, baking soda, salt",recipenlg
+unfiltered_lora,has_forbidden,Pine Nut Cookie Cups,"Ingredients: granulated sugar, eggs, vanilla extract, salt, baking powder, baking soda, baking soda, salt",recipenlg
+unfiltered_lora,has_forbidden,Bean And Corn Casserole,"Ingredients: ground beef, onion, garlic cloves, dried oregano, dried oregano, dried oregano, dried oregano, salt",recipenlg
