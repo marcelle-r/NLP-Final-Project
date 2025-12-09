@@ -1,0 +1,2 @@
+Time: 248.0min
+Steps: 5835
