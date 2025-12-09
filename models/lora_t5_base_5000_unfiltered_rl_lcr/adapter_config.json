@@ -29,8 +29,8 @@
   "rank_pattern": {},
   "revision": null,
   "target_modules": [
-    "v",
-    "q"
+    "q",
+    "v"
   ],
   "target_parameters": null,
   "task_type": "SEQ_2_SEQ_LM",
