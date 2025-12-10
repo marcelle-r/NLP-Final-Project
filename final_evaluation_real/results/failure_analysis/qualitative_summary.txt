@@ -1,0 +1,59 @@
+QUALITATIVE EVALUATION SUMMARY FOR FINAL REPORT
+================================================================
+
+COMMON FAILURE PATTERNS ACROSS ALL MODELS:
+
+1. MISSING REQUIRED KEYWORDS (Most Common)
+   - Affects ALL models, including best performers
+   - Recipes use generic ingredients without diabetes-friendly substitutes
+   - Example: Plain chicken with flour, missing whole wheat/vegetables
+   - Even Safe Full (84.2% LCR) fails 15.8% due to this
+
+2. DISH TYPE STRONGLY PREDICTS FAILURE
+   - Desserts: Highest failure rate across all models (60-80% fail)
+   - Carb-heavy dishes (pasta/rice): Second highest (40-60% fail)
+   - Fried foods: Consistently problematic (50-70% fail)
+   - Protein/vegetable dishes: Lowest failure rate (10-30% fail)
+   - Inherent constraint conflict: desserts require sugar/flour
+
+3. BASELINE MODELS SHOW FUNDAMENTAL LIMITATIONS
+   - Baseline Vanilla: ~85-90% failure rate
+   - Baseline Keywords (with prompting): ~70-75% failure rate
+   - Prompting alone insufficient - needs fine-tuning
+   - Even explicit keyword lists in prompt don't solve the problem
+
+4. DATA SCALING EFFECTS
+   - Safe 1K: Many structural issues + constraint violations
+   - Safe 5K: Fewer structural issues, mainly constraint violations
+   - Safe 10K+: Mostly just constraint violations
+   - Structural competence achieved with 5K+ examples
+
+5. DATA QUALITY TRUMPS QUANTITY
+   - Unfiltered 5K: 52.1% failure rate
+   - Safe 5K: 27.2% failure rate  
+   - Same data size, filtering reduces failures by 24.9%
+   - Data quality more important than model size for safety
+
+6. RL MODEL COLLAPSE (Negative Result)
+   - Both RL models show catastrophic degradation
+   - Repetitive text loops ("add chicken... add chicken...")
+   - Reward saturation caused vanishing gradients
+   - Important lesson: RL requires careful reward shaping
+
+KEY INSIGHTS FOR DISCUSSION SECTION:
+
+✓ Fine-tuning essential (baselines fail ~85%)
+✓ Data filtering > model size for safety
+✓ Certain dish types inherently difficult
+✓ Required keywords harder than avoiding forbidden
+✓ Scaling helps structure but not perfect constraint satisfaction
+✓ RL without proper reward design can cause collapse
+
+EXAMPLES TO INCLUDE IN PAPER:
+
+See individual model failure_examples.csv files for:
+- Baseline failures (show need for fine-tuning)
+- Safe 1K structural issues (short/incomplete recipes)
+- Safe Full failures (show even best model struggles with desserts)
+- Unfiltered vs Safe 5K comparison (show filtering benefit)
+- RL model collapse examples (show repetitive loops)
