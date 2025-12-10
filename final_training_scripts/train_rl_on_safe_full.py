@@ -10,7 +10,6 @@ from pathlib import Path
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM, Trainer, TrainingArguments, TrainerCallback
 from peft import LoraConfig, get_peft_model, TaskType, PeftModel
 from datasets import Dataset
-import pandas as pd
 import json
 import re
 import subprocess
@@ -254,11 +253,12 @@ def main():
     
     # Load training data
     print("\n3. Loading training prompts...", flush=True)
-    val_data = pd.read_csv(BASE_DIR / "data/filtered_val_full.csv")
-    train_sample = val_data.sample(n=1000, random_state=42)
+    training_data_dir = BASE_DIR / "final_training_data"
     
-    prompts = [f"Generate a diabetes-friendly {row['name']} recipe." 
-               for _, row in train_sample.iterrows()]
+    with open(training_data_dir / "safe_full_train_prompts.txt", 'r') as f:
+        prompts = f.read().strip().split('\n')
+    
+    print(f"✓ Loaded {len(prompts)} prompts (will use all for training)", flush=True)
     
     rl_dataset = Dataset.from_dict({"prompt": prompts})
     print(f"✓ Loaded {len(prompts)} prompts", flush=True)
