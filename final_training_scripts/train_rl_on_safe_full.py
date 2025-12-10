@@ -151,7 +151,7 @@ class RLTrainer(Trainer):
         # Override data collator to handle prompts
         self.data_collator = lambda data: {"prompt": [item["prompt"] for item in data]}
     
-    def compute_loss(self, model, inputs, return_outputs=False):
+    def compute_loss(self, model, inputs, return_outputs=False, num_items_in_batch=None):
         prompts = inputs["prompt"]
         
         prompt_inputs = self.tokenizer(
