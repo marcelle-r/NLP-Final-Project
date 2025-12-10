@@ -162,13 +162,23 @@ class RLTrainer(Trainer):
             max_length=512
         ).to(model.device)
         
+        # Set model to eval for generation
+        model.eval()
+        with torch.no_grad():
+            outputs = model.generate(
+                **prompt_inputs,
+                max_length=512,
+                num_beams=4,
+                early_stopping=True,
+                do_sample=False,
+                pad_token_id=self.tokenizer.pad_token_id,
+                eos_token_id=self.tokenizer.eos_token_id,
+                output_scores=False,
+                return_dict_in_generate=False
+            )
+        
+        # Back to train mode
         model.train()
-        outputs = model.generate(
-            **prompt_inputs,
-            **self.generation_config,
-            output_scores=True,
-            return_dict_in_generate=True
-        )
         
         generated_ids = outputs.sequences
         generated_texts = self.tokenizer.batch_decode(generated_ids, skip_special_tokens=True)
@@ -182,16 +192,18 @@ class RLTrainer(Trainer):
         if advantages.std() > 0:
             advantages = advantages / (advantages.std() + 1e-8)
         
-        encoder_outputs = model.get_encoder()(
-            input_ids=prompt_inputs["input_ids"],
-            attention_mask=prompt_inputs["attention_mask"]
-        )
-        
-        decoder_outputs = model(
-            encoder_outputs=encoder_outputs,
-            decoder_input_ids=generated_ids[:, :-1],
-            use_cache=False
-        )
+        # Re-encode for computing log probs
+        with torch.enable_grad():
+            encoder_outputs = model.get_encoder()(
+                input_ids=prompt_inputs["input_ids"],
+                attention_mask=prompt_inputs["attention_mask"]
+            )
+            
+            decoder_outputs = model(
+                encoder_outputs=encoder_outputs,
+                decoder_input_ids=generated_ids[:, :-1],
+                use_cache=False
+            )
         
         logits = decoder_outputs.logits
         log_probs = F.log_softmax(logits, dim=-1)
