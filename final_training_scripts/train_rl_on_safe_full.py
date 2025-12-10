@@ -183,6 +183,12 @@ class RLTrainer(Trainer):
         generated_ids = outputs  # generate() returns tensor when return_dict_in_generate=False
         generated_texts = self.tokenizer.batch_decode(generated_ids, skip_special_tokens=True)
         
+        # Debug: Print first generation at step 0
+        if self.state.global_step == 0:
+            print(f"\n[DEBUG] Sample prompt: {prompts[0][:80]}...", flush=True)
+            print(f"[DEBUG] Sample generation: {generated_texts[0][:200]}...", flush=True)
+            print(f"[DEBUG] Generated length: {len(generated_texts[0])} chars\n", flush=True)
+        
         rewards, avg_reward = compute_rewards(generated_texts)
         rewards_tensor = torch.tensor(rewards, dtype=torch.float32, device=model.device)
         
