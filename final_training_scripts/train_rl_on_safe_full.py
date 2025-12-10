@@ -148,6 +148,8 @@ class RLTrainer(Trainer):
             "early_stopping": True,
             "no_repeat_ngram_size": 2
         }
+        # Override data collator to handle prompts
+        self.data_collator = lambda data: {"prompt": [item["prompt"] for item in data]}
     
     def compute_loss(self, model, inputs, return_outputs=False):
         prompts = inputs["prompt"]
