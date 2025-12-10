@@ -180,7 +180,7 @@ class RLTrainer(Trainer):
         # Back to train mode
         model.train()
         
-        generated_ids = outputs.sequences
+        generated_ids = outputs  # generate() returns tensor when return_dict_in_generate=False
         generated_texts = self.tokenizer.batch_decode(generated_ids, skip_special_tokens=True)
         
         rewards, avg_reward = compute_rewards(generated_texts)
