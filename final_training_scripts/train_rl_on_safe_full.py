@@ -187,7 +187,24 @@ class RLTrainer(Trainer):
         if self.state.global_step == 0:
             print(f"\n[DEBUG] Sample prompt: {prompts[0][:80]}...", flush=True)
             print(f"[DEBUG] Sample generation: {generated_texts[0][:200]}...", flush=True)
-            print(f"[DEBUG] Generated length: {len(generated_texts[0])} chars\n", flush=True)
+            
+            # Extract and check ingredients like reward function does
+            text = generated_texts[0]
+            if "Ingredients:" in text:
+                ingredients = text.split("Ingredients:")[1]
+                if "Instructions:" in ingredients:
+                    ingredients = ingredients.split("Instructions:")[0]
+                ingredients = ingredients.strip()
+            else:
+                ingredients = text.strip()
+            
+            print(f"[DEBUG] Extracted ingredients: {ingredients[:150]}...", flush=True)
+            
+            # Check what LCR finds
+            has_forbidden = any(has_keyword_match(ingredients, kw) for kw in forbidden_keywords)
+            has_required = any(has_keyword_match(ingredients, kw) for kw in required_keywords)
+            print(f"[DEBUG] LCR check: has_forbidden={has_forbidden}, has_required={has_required}", flush=True)
+            print(f"[DEBUG] Should pass LCR: {not has_forbidden and has_required}\n", flush=True)
         
         rewards, avg_reward = compute_rewards(generated_texts)
         rewards_tensor = torch.tensor(rewards, dtype=torch.float32, device=model.device)
