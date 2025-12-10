@@ -108,11 +108,12 @@ print(f"✓ {len(required_keywords)} required keywords", flush=True)
 
 # ==================== REWARD FUNCTIONS ====================
 def has_keyword_match(text, keyword):
+    """Check if keyword exists in text with word boundaries."""
     text = text.lower()
     keyword = keyword.lower()
-    pattern = r'\\b' + re.escape(keyword).replace(r'\\ ', r'\\s*') + r'\\b'
+    # Handle multi-word keywords with flexible spacing
+    pattern = r'\b' + re.escape(keyword).replace(r'\ ', r'\s+') + r'\b'
     return bool(re.search(pattern, text))
-
 def check_lcr(text):
     text = str(text).lower()
     has_forbidden = any(has_keyword_match(text, kw) for kw in forbidden_keywords)
