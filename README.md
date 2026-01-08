@@ -1,3 +1,5 @@
+📄 **Project Report:** [PDF](docs/DiabetesSafe_RecipeGeneration_Report.pdf)
+
 ## Project Overview
 This project studies the reliability of large language models in a safety-critical setting. We treat **diabetes-safe recipe generation** as a **constrained conditional generation** task and evaluate how **data curation** and **training scale** affect safety compliance.
 
